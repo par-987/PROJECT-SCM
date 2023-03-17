@@ -5,3 +5,6 @@ int get_1st_Weekday(int year){
     d = (((year - 1) * 365) + ((year - 1) / 4) - ((year - 1) / 100) + ((year) / 400) + 1) % 7;
   return d;
 }
+daysInMonth=monthDay[month];
+      printf("\n\n---------------%s-------------------\n",months[month]);
+      printf("\n  Sun  Mon  Tue  Wed  Thurs  Fri  Sat\n");
