@@ -4,7 +4,10 @@ int get_1st_Weekday(int year){
     int d;
     d = (((year - 1) * 365) + ((year - 1) / 4) - ((year - 1) / 100) + ((year) / 400) + 1) % 7;//algorithm to calculate the first day
   return d;
-  
+  int s;
+  d = (((year - 1) * 365) + ((year - 1) / 4) - ((year - 1) / 100) + ((year) / 400) + 1) % 7;
+  return s;
+
 }
 }
   
