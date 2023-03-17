@@ -2,6 +2,15 @@
 #include<stdlib.h>
 int get_1st_Weekday(int year){
     int d;
-    d = (((year - 1) * 365) + ((year - 1) / 4) - ((year - 1) / 100) + ((year) / 400) + 1) % 7;
+    d = (((year - 1) * 365) + ((year - 1) / 4) - ((year - 1) / 100) + ((year) / 400) + 1) % 7;//algorithm to calculate the first day
   return d;
 }
+  
+    int main()
+{
+   system("Color 3F");
+   int year,month,day,daysInMonth,weekDay=0,startingDay;
+   printf("\nEnter your desired year:");
+   scanf("%d",&year);//year input 
+   char *months[]={"January","February","March","April","May","June","July","August","September","October","November","December"};
+   int monthDay[]={31,28,31,30,31,30,31,31,30,31,30,31};
