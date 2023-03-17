@@ -6,7 +6,7 @@ int get_1st_Weekday(int year){
   return d;
   int get_1st_weekday(int year){
     int s;
-    s= (((year - 1) * 365) + ((year - 1) / 4) - ((year - 1) / 100) + ((year) / 400) + 1) % 7;
+    s= (((year - 4) * 365) + ((year - 2) / 4) - ((year - 1) / 100) + ((year) / 400) + 1) % 7;
 }
 }
   
