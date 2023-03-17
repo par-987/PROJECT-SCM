@@ -15,3 +15,9 @@ int get_1st_Weekday(int year){
    scanf("%d",&year);//year input 
    char *months[]={"January","February","March","April","May","June","July","August","September","October","November","December"};
    int monthDay[]={31,28,31,30,31,30,31,31,30,31,30,31};
+if((year%4==0&&year%100!=0)||year%400==0)
+       monthDay[1]=29;
+
+   startingDay=get_1st_weekday(year);
+
+   for(month=0;month<12;month++){
