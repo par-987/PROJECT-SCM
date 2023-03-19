@@ -7,13 +7,13 @@ int get_1st_Weekday(int year){
 
 
 }
- 
+
     int main()
 {
    system("Color 3F");
    int year,month,day,daysInMonth,weekDay=0,startingDay;
    printf("\nEnter your desired year:");
-   scanf("%d",&year);//year input 
+   scanf("%d",&year);//year input
    char *months[]={"January","February","March","April","May","June","July","August","September","October","November","December"};
    int monthDay[]={31,28,31,30,31,30,31,31,30,31,30,31};
 if((year%4==0&&year%100!=0)||year%400==0)
@@ -22,3 +22,8 @@ if((year%4==0&&year%100!=0)||year%400==0)
    startingDay=get_1st_weekday(year);
 
    for(month=0;month<12;month++){
+         daysInMonth=monthDay[month];
+      printf("\n\n---------------%s-------------------\n",months[month]);
+      printf("\n  Sun  Mon  Tue  Wed  Thurs  Fri  Sat\n");
+      for(weekDay=0;weekDay<startingDay;weekDay++)
+        printf("     ");
