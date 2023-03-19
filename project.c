@@ -27,3 +27,11 @@ if((year%4==0&&year%100!=0)||year%400==0)
       printf("\n  Sun  Mon  Tue  Wed  Thurs  Fri  Sat\n");
       for(weekDay=0;weekDay<startingDay;weekDay++)
         printf("     ");
+
+      for(day=1;day<=daysInMonth;day++){
+        printf("%5d",day);
+
+        if(++weekDay>6){
+            printf("\n");
+            weekDay=0;
+        }
