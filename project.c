@@ -10,7 +10,6 @@ int get_1st_Weekday(int year){
 
     int main()
 {
-   system("Color 3F");
    int year,month,day,daysInMonth,weekDay=0,startingDay;
    printf("\nEnter your desired year:");
    scanf("%d",&year);//year input
