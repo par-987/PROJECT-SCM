@@ -18,7 +18,7 @@ int get_1st_Weekday(int year){
 if((year%4==0&&year%100!=0)||year%400==0)
        monthDay[1]=29;
 
-   startingDay=get_1st_weekday(year);
+   startingDay=get_1st_Weekday(year);
 
    for(month=0;month<12;month++){
          daysInMonth=monthDay[month];
